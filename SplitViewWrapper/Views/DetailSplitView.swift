@@ -7,9 +7,10 @@
 //
 
 import SwiftUI
-struct DetailSplitView<DataType: Searchable & Identifiable & Loopable> : View {
+struct DetailSplitView<DataType: Searchable & Identifiable & Loopable, ListItemType: SplitViewListItemProtocol, DetailViewType: SplitViewDetailProtocol> : View {
     
     @EnvironmentObject var dataModel: SearchableSplitViewDataModel<DataType>
+    @EnvironmentObject var model: SplitViewModel<ListItemType, DetailViewType>
     var selectedItem: DataType {
         return dataModel.selectedItem
     }
@@ -17,6 +18,10 @@ struct DetailSplitView<DataType: Searchable & Identifiable & Loopable> : View {
         return dataModel.getPrintableProps().0
     }
     var body: some View {
+        var view = model.splitViewDetailTemplate
+        view.data = selectedItem as! DetailViewType.DataType
+        return view
+        /*
         NavigationView {
             Form {
                 ForEach(dataModel.alphabeticPropKeys().identified(by: \.self)) { prop -> Text in
@@ -25,6 +30,7 @@ struct DetailSplitView<DataType: Searchable & Identifiable & Loopable> : View {
             }
             .navigationBarTitle(Text("Details"))
         }
+         */
     }
 }
 

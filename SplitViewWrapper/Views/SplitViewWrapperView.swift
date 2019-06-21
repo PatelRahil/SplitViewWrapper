@@ -12,7 +12,7 @@ struct SplitViewWrapperView<DataSource: SplitViewDataSource, ListItemType: Split
     @EnvironmentObject var splitViewDataModel: SearchableSplitViewDataModel<DataSource.DataType>
     var dataSource: DataSource
     var body: some View {
-        return SplitView(master: MasterSplitView<DataSource, ListItemType, DetailViewType>(items: splitViewDataModel.displayedItems), detail: DetailSplitView<DataSource.DataType>())
+        return SplitView(master: MasterSplitView<DataSource, ListItemType, DetailViewType>(items: splitViewDataModel.displayedItems), detail: DetailSplitView<DataSource.DataType, ListItemType, DetailViewType>())
             .onAppear {
                 self.dataSource.downloadData(success: { (items) in
                     self.splitViewDataModel.allItems = items
