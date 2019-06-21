@@ -10,10 +10,12 @@ import Foundation
 import SwiftUI
 import Combine
 
-public class SplitViewModel<CustomView: SplitViewListItemProtocol>: BindableObject {
-    public var didChange = PassthroughSubject<SplitViewModel<CustomView>, Never>()
-    let splitViewListItemTemplate: CustomView
-    public init(listTemplate: CustomView) {
+public class SplitViewModel<CustomListView: SplitViewListItemProtocol, CustomDetailView: SplitViewDetailProtocol>: BindableObject {
+    public var didChange = PassthroughSubject<SplitViewModel<CustomListView, CustomDetailView>, Never>()
+    let splitViewListItemTemplate: CustomListView
+    let splitViewDetailTemplate: CustomDetailView
+    public init(listTemplate: CustomListView, detailTemplate: CustomDetailView) {
         self.splitViewListItemTemplate = listTemplate
+        self.splitViewDetailTemplate = detailTemplate
     }
 }

@@ -8,8 +8,8 @@
 
 import SwiftUI
 
-struct MasterSplitView<DataSource: SplitViewDataSource, ListItemType: SplitViewListItemProtocol> : View {
-    @EnvironmentObject var splitViewModel: SplitViewModel<ListItemType>
+struct MasterSplitView<DataSource: SplitViewDataSource, ListItemType: SplitViewListItemProtocol, DetailViewType: SplitViewDetailProtocol> : View {
+    @EnvironmentObject var splitViewModel: SplitViewModel<ListItemType, DetailViewType>
     var items:[DataSource.DataType]
     var body: some View {
         VStack {

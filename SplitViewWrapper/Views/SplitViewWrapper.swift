@@ -8,17 +8,17 @@
 
 import SwiftUI
 
-public struct SplitViewWrapper<DataSource: SplitViewDataSource, ListItemView: SplitViewListItemProtocol>: View {
-    var wrapperData: SplitViewWrapperData<DataSource, ListItemView>
+public struct SplitViewWrapper<DataSource: SplitViewDataSource, ListItemView: SplitViewListItemProtocol, DetailView: SplitViewDetailProtocol>: View {
+    var wrapperData: SplitViewWrapperData<DataSource, ListItemView, DetailView>
     var dataSource: DataSource {
         wrapperData.dataSource
     }
     public var body: some View {
-        return SplitViewWrapperView<DataSource, ListItemView>(dataSource: dataSource)
+        return SplitViewWrapperView<DataSource, ListItemView, DetailView>(dataSource: dataSource)
             .environmentObject(wrapperData.searchableSplitViewDataModel)
             .environmentObject(wrapperData.splitViewModel)
     }
-    public init(wrapperData: SplitViewWrapperData<DataSource, ListItemView>) {
+    public init(wrapperData: SplitViewWrapperData<DataSource, ListItemView, DetailView>) {
         self.wrapperData = wrapperData
     }
 }

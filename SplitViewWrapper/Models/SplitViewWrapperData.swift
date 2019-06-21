@@ -8,13 +8,13 @@
 
 import Foundation
 
-public class SplitViewWrapperData<DataSource: SplitViewDataSource, ListViewItem: SplitViewListItemProtocol> {
+public class SplitViewWrapperData<DataSource: SplitViewDataSource, ListViewItem: SplitViewListItemProtocol, DetailViewItem: SplitViewDetailProtocol> {
     var dataSource: DataSource
     var searchableSplitViewDataModel: SearchableSplitViewDataModel<DataSource.DataType>
-    var splitViewModel: SplitViewModel<ListViewItem>
-    public init<T: SplitViewDataSource, V: SplitViewListItemProtocol>(dataSource: T, searchableSplitViewDataModel: SearchableSplitViewDataModel<T.DataType>, splitViewModel: SplitViewModel<V>) where T.DataType == V.DataType {
+    var splitViewModel: SplitViewModel<ListViewItem, DetailViewItem>
+    public init<T: SplitViewDataSource, U: SplitViewListItemProtocol, V: SplitViewDetailProtocol>(dataSource: T, searchableSplitViewDataModel: SearchableSplitViewDataModel<T.DataType>, splitViewModel: SplitViewModel<U,V>) where T.DataType == U.DataType {
         self.dataSource = dataSource as! DataSource
         self.searchableSplitViewDataModel = searchableSplitViewDataModel as! SearchableSplitViewDataModel<DataSource.DataType>
-        self.splitViewModel = splitViewModel as! SplitViewModel<ListViewItem>
+        self.splitViewModel = splitViewModel as! SplitViewModel<ListViewItem, DetailViewItem>
     }
 }
