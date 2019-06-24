@@ -10,6 +10,6 @@ import Foundation
 import SwiftUI
 
 public protocol SplitViewListItemProtocol: View {
-    associatedtype DataType: Identifiable & Loopable
+    associatedtype DataType: Identifiable
     var data: DataType? { get set }
 }

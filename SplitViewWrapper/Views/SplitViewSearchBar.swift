@@ -9,7 +9,7 @@
 import Foundation
 import SwiftUI
 
-struct SplitViewSearchbar<DataType: Searchable & Identifiable & Loopable> : View {
+struct SplitViewSearchbar<DataType: Searchable & Identifiable> : View {
     @EnvironmentObject var dataModel: SearchableSplitViewDataModel<DataType>
     @State var searchTerm = ""
     var body: some View {

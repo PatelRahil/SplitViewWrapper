@@ -10,7 +10,7 @@ import Foundation
 import Combine
 import SwiftUI
 
-public final class SearchableSplitViewDataModel<SearchableDataType: Identifiable & Loopable & Searchable>: SplitViewDataModel<SearchableDataType> {
+public final class SearchableSplitViewDataModel<SearchableDataType: Identifiable & Searchable>: SplitViewDataModel<SearchableDataType> {
     var allItems: [SearchableDataType] = []
     var displayedItems: [SearchableDataType] = [] {
         didSet {

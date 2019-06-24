@@ -10,6 +10,6 @@ import Foundation
 import SwiftUI
 
 public protocol SplitViewDataSource {
-    associatedtype DataType: Loopable & Searchable & Identifiable
+    associatedtype DataType: Searchable & Identifiable
     func downloadData(success: @escaping ([DataType]) -> (), fail: @escaping (String) -> ())
 }
