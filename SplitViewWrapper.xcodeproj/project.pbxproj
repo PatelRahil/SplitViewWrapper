@@ -14,7 +14,6 @@
 		FBB0928D22BB18E3000A91E9 /* SplitViewListItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927622BB18E2000A91E9 /* SplitViewListItemProtocol.swift */; };
 		FBB0928E22BB18E3000A91E9 /* SplitViewWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927822BB18E2000A91E9 /* SplitViewWrapper.swift */; };
 		FBB0928F22BB18E3000A91E9 /* SplitViewSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927922BB18E2000A91E9 /* SplitViewSearchBar.swift */; };
-		FBB0929022BB18E3000A91E9 /* PersonListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927A22BB18E2000A91E9 /* PersonListView.swift */; };
 		FBB0929122BB18E3000A91E9 /* MasterSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927B22BB18E2000A91E9 /* MasterSplitView.swift */; };
 		FBB0929222BB18E3000A91E9 /* SplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927C22BB18E2000A91E9 /* SplitView.swift */; };
 		FBB0929322BB18E3000A91E9 /* DetailSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927D22BB18E2000A91E9 /* DetailSplitView.swift */; };
@@ -40,7 +39,6 @@
 		FBB0927622BB18E2000A91E9 /* SplitViewListItemProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewListItemProtocol.swift; sourceTree = "<group>"; };
 		FBB0927822BB18E2000A91E9 /* SplitViewWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewWrapper.swift; sourceTree = "<group>"; };
 		FBB0927922BB18E2000A91E9 /* SplitViewSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewSearchBar.swift; sourceTree = "<group>"; };
-		FBB0927A22BB18E2000A91E9 /* PersonListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonListView.swift; sourceTree = "<group>"; };
 		FBB0927B22BB18E2000A91E9 /* MasterSplitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterSplitView.swift; sourceTree = "<group>"; };
 		FBB0927C22BB18E2000A91E9 /* SplitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitView.swift; sourceTree = "<group>"; };
 		FBB0927D22BB18E2000A91E9 /* DetailSplitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSplitView.swift; sourceTree = "<group>"; };
@@ -114,7 +112,6 @@
 			children = (
 				FBB0927822BB18E2000A91E9 /* SplitViewWrapper.swift */,
 				FBB0927922BB18E2000A91E9 /* SplitViewSearchBar.swift */,
-				FBB0927A22BB18E2000A91E9 /* PersonListView.swift */,
 				FBB0927B22BB18E2000A91E9 /* MasterSplitView.swift */,
 				FBB0927C22BB18E2000A91E9 /* SplitView.swift */,
 				FBB0927D22BB18E2000A91E9 /* DetailSplitView.swift */,
@@ -230,7 +227,6 @@
 				FBB0929322BB18E3000A91E9 /* DetailSplitView.swift in Sources */,
 				FBB0929A22BB18E3000A91E9 /* SplitViewDataModel.swift in Sources */,
 				FBB0929722BB18E3000A91E9 /* DictionaryExtension.swift in Sources */,
-				FBB0929022BB18E3000A91E9 /* PersonListView.swift in Sources */,
 				FBB0929F22BBCC38000A91E9 /* SplitViewController.swift in Sources */,
 				FBB0929122BB18E3000A91E9 /* MasterSplitView.swift in Sources */,
 				FBB0929B22BB18E3000A91E9 /* SearchableSplitViewDataModel.swift in Sources */,
