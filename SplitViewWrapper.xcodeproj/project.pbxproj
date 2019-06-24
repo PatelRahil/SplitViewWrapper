@@ -22,8 +22,6 @@
 		FBB0929522BB18E3000A91E9 /* SplitViewWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927F22BB18E2000A91E9 /* SplitViewWrapperView.swift */; };
 		FBB0929622BB18E3000A91E9 /* LoopableExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928122BB18E2000A91E9 /* LoopableExtension.swift */; };
 		FBB0929722BB18E3000A91E9 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928222BB18E2000A91E9 /* DictionaryExtension.swift */; };
-		FBB0929822BB18E3000A91E9 /* PersonDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928422BB18E2000A91E9 /* PersonDataModel.swift */; };
-		FBB0929922BB18E3000A91E9 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928522BB18E2000A91E9 /* Person.swift */; };
 		FBB0929A22BB18E3000A91E9 /* SplitViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928622BB18E2000A91E9 /* SplitViewDataModel.swift */; };
 		FBB0929B22BB18E3000A91E9 /* SearchableSplitViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928722BB18E2000A91E9 /* SearchableSplitViewDataModel.swift */; };
 		FBB0929C22BB18E3000A91E9 /* SplitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928822BB18E2000A91E9 /* SplitViewModel.swift */; };
@@ -50,8 +48,6 @@
 		FBB0927F22BB18E2000A91E9 /* SplitViewWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewWrapperView.swift; sourceTree = "<group>"; };
 		FBB0928122BB18E2000A91E9 /* LoopableExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoopableExtension.swift; sourceTree = "<group>"; };
 		FBB0928222BB18E2000A91E9 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
-		FBB0928422BB18E2000A91E9 /* PersonDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PersonDataModel.swift; sourceTree = "<group>"; };
-		FBB0928522BB18E2000A91E9 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		FBB0928622BB18E2000A91E9 /* SplitViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewDataModel.swift; sourceTree = "<group>"; };
 		FBB0928722BB18E2000A91E9 /* SearchableSplitViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableSplitViewDataModel.swift; sourceTree = "<group>"; };
 		FBB0928822BB18E2000A91E9 /* SplitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewModel.swift; sourceTree = "<group>"; };
@@ -140,8 +136,6 @@
 		FBB0928322BB18E2000A91E9 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				FBB0928422BB18E2000A91E9 /* PersonDataModel.swift */,
-				FBB0928522BB18E2000A91E9 /* Person.swift */,
 				FBB0928622BB18E2000A91E9 /* SplitViewDataModel.swift */,
 				FBB0928722BB18E2000A91E9 /* SearchableSplitViewDataModel.swift */,
 				FBB0928822BB18E2000A91E9 /* SplitViewModel.swift */,
@@ -240,7 +234,6 @@
 				FBB0929F22BBCC38000A91E9 /* SplitViewController.swift in Sources */,
 				FBB0929122BB18E3000A91E9 /* MasterSplitView.swift in Sources */,
 				FBB0929B22BB18E3000A91E9 /* SearchableSplitViewDataModel.swift in Sources */,
-				FBB0929822BB18E3000A91E9 /* PersonDataModel.swift in Sources */,
 				FBF9ACA622BD5BC800EB5DC8 /* SplitViewDetailProtocol.swift in Sources */,
 				FBB0928D22BB18E3000A91E9 /* SplitViewListItemProtocol.swift in Sources */,
 				FBB0929222BB18E3000A91E9 /* SplitView.swift in Sources */,
@@ -248,7 +241,6 @@
 				FBB0928A22BB18E3000A91E9 /* Loopable.swift in Sources */,
 				FBB0929422BB18E3000A91E9 /* SplitViewListItem.swift in Sources */,
 				FBB0929C22BB18E3000A91E9 /* SplitViewModel.swift in Sources */,
-				FBB0929922BB18E3000A91E9 /* Person.swift in Sources */,
 				FBB0928E22BB18E3000A91E9 /* SplitViewWrapper.swift in Sources */,
 				FBB0929D22BB18E3000A91E9 /* SplitViewWrapperData.swift in Sources */,
 			);
