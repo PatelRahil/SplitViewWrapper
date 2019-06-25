@@ -18,7 +18,6 @@
 		FBB0929322BB18E3000A91E9 /* DetailSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927D22BB18E2000A91E9 /* DetailSplitView.swift */; };
 		FBB0929422BB18E3000A91E9 /* SplitViewListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927E22BB18E2000A91E9 /* SplitViewListItem.swift */; };
 		FBB0929522BB18E3000A91E9 /* SplitViewWrapperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927F22BB18E2000A91E9 /* SplitViewWrapperView.swift */; };
-		FBB0929722BB18E3000A91E9 /* DictionaryExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928222BB18E2000A91E9 /* DictionaryExtension.swift */; };
 		FBB0929A22BB18E3000A91E9 /* SplitViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928622BB18E2000A91E9 /* SplitViewDataModel.swift */; };
 		FBB0929B22BB18E3000A91E9 /* SearchableSplitViewDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928722BB18E2000A91E9 /* SearchableSplitViewDataModel.swift */; };
 		FBB0929C22BB18E3000A91E9 /* SplitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0928822BB18E2000A91E9 /* SplitViewModel.swift */; };
@@ -41,7 +40,6 @@
 		FBB0927D22BB18E2000A91E9 /* DetailSplitView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailSplitView.swift; sourceTree = "<group>"; };
 		FBB0927E22BB18E2000A91E9 /* SplitViewListItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewListItem.swift; sourceTree = "<group>"; };
 		FBB0927F22BB18E2000A91E9 /* SplitViewWrapperView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewWrapperView.swift; sourceTree = "<group>"; };
-		FBB0928222BB18E2000A91E9 /* DictionaryExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DictionaryExtension.swift; sourceTree = "<group>"; };
 		FBB0928622BB18E2000A91E9 /* SplitViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewDataModel.swift; sourceTree = "<group>"; };
 		FBB0928722BB18E2000A91E9 /* SearchableSplitViewDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchableSplitViewDataModel.swift; sourceTree = "<group>"; };
 		FBB0928822BB18E2000A91E9 /* SplitViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplitViewModel.swift; sourceTree = "<group>"; };
@@ -119,7 +117,6 @@
 		FBB0928022BB18E2000A91E9 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FBB0928222BB18E2000A91E9 /* DictionaryExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -219,7 +216,6 @@
 				FBB0928C22BB18E3000A91E9 /* Searchable.swift in Sources */,
 				FBB0929322BB18E3000A91E9 /* DetailSplitView.swift in Sources */,
 				FBB0929A22BB18E3000A91E9 /* SplitViewDataModel.swift in Sources */,
-				FBB0929722BB18E3000A91E9 /* DictionaryExtension.swift in Sources */,
 				FBB0929F22BBCC38000A91E9 /* SplitViewController.swift in Sources */,
 				FBB0929122BB18E3000A91E9 /* MasterSplitView.swift in Sources */,
 				FBB0929B22BB18E3000A91E9 /* SearchableSplitViewDataModel.swift in Sources */,
