@@ -1,6 +1,6 @@
 # SplitViewWrapper
 
-A SwiftUI implementation UIKit's UISplitView that manages all of the dataflow necessary for a basic Split View.
+A SwiftUI implementation of UIKit's UISplitView that manages all of the dataflow necessary for a basic Split View.
 
 ## Getting Started
 
@@ -26,16 +26,16 @@ struct Person: Identifiable, Searchable {
     var name: String
     var birthdate: String
     
-    var id: String { // satisfies Identifiable protocol
+    var id: String { // satisfies the Identifiable protocol
         _id
     }
-    var searchableText: String { // satisfies Searchable
+    var searchableText: String { // satisfies the Searchable protocol
         get { name }
     }
 }
 ```
     
-2.  A data model that conforms to `SplitViewDataSource` ([here](./SplitViewWrapper/Protocols/SplitViewDataSource.swift)), which requires
+2.  A data model that conforms to `SplitViewDataSource` ([here](./SplitViewWrapper/Protocols/SplitViewDataSource.swift) in repository), which requires
   * an array of the same aforementioned data type (this isn't really necessary anymore, but I need to refactor to remove this requirement)
   * a function called `download` that has two callback parameters, one of which takes an array of the aforementioned data type, and the other of which takes a `String` (for errors)
 ### Example:
