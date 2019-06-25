@@ -39,7 +39,6 @@ struct Person: Identifiable, Searchable {
 ```
     
 2.  A data model that conforms to `SplitViewDataSource` ([here](./SplitViewWrapper/Protocols/SplitViewDataSource.swift) in repository), which requires
-  * an array of the same aforementioned data type (this isn't really necessary anymore, but I need to refactor to remove this requirement)
   * a function called `download` that has two callback parameters, one of which takes an array of the aforementioned data type, and the other of which takes a `String` (for errors)
 ### Example:
 ```
