@@ -82,7 +82,6 @@
 				FBB0927722BB18E2000A91E9 /* Views */,
 				FBB0928322BB18E2000A91E9 /* Models */,
 				FBB0927222BB18E2000A91E9 /* Protocols */,
-				FBB0928022BB18E2000A91E9 /* Extensions */,
 				FBB0926922BB1837000A91E9 /* SplitViewWrapper.h */,
 				FBB0926A22BB1837000A91E9 /* Info.plist */,
 			);
@@ -112,13 +111,6 @@
 				FBB0927F22BB18E2000A91E9 /* SplitViewWrapperView.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		FBB0928022BB18E2000A91E9 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 		FBB0928322BB18E2000A91E9 /* Models */ = {
