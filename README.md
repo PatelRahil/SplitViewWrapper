@@ -2,6 +2,9 @@
 
 A SwiftUI implementation of UIKit's UISplitView that manages all of the dataflow necessary for a basic Split View.
 
+## Requirements
+Since this framework uses SwiftUI, it requires Xcode 11 or higher.
+
 ## Getting Started
 
 This is a framework, so click [here](https://developer.apple.com/library/archive/technotes/tn2435/_index.html) for instructions on how to embed a framework in your app.
