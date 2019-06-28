@@ -14,6 +14,7 @@ public class SplitViewModel<CustomListView: SplitViewListItemProtocol, CustomDet
     public var didChange = PassthroughSubject<SplitViewModel<CustomListView, CustomDetailView>, Never>()
     let splitViewListItemTemplate: CustomListView
     let splitViewDetailTemplate: CustomDetailView
+    public var searchable = false
     public init(listTemplate: CustomListView, detailTemplate: CustomDetailView) {
         self.splitViewListItemTemplate = listTemplate
         self.splitViewDetailTemplate = detailTemplate

@@ -13,7 +13,9 @@ struct MasterSplitView<DataSource: SplitViewDataSource, ListItemType: SplitViewL
     var items:[DataSource.DataType]
     var body: some View {
         VStack {
-            SplitViewSearchbar<DataSource.DataType>().padding()
+            if splitViewModel.searchable {
+                SplitViewSearchbar<DataSource.DataType>().padding()
+            }
             List {
                 ForEach(items) { item -> SplitViewListItem<DataSource, ListItemType> in
                     var listItemView = self.splitViewModel.splitViewListItemTemplate
