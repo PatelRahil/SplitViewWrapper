@@ -7,10 +7,10 @@
 //
 
 import SwiftUI
-struct DetailSplitView<DataType: Searchable & Identifiable, ListItemType: SplitViewListItemProtocol, DetailViewType: SplitViewDetailProtocol> : View {
+struct DetailSplitView<DataType: Searchable & Identifiable, ListItemType: SplitViewListItemProtocol, DetailViewType: SplitViewDetailProtocol, HeaderViewType: SplitViewHeaderProtocol> : View {
     
     @EnvironmentObject var dataModel: SearchableSplitViewDataModel<DataType>
-    @EnvironmentObject var model: SplitViewModel<ListItemType, DetailViewType>
+    @EnvironmentObject var model: SplitViewModel<ListItemType, DetailViewType, HeaderViewType>
     var selectedItem: DataType? {
         return dataModel.selectedItem
     }

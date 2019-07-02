@@ -8,8 +8,9 @@
 
 import Foundation
 import SwiftUI
+import Combine
 
-public protocol SplitViewDataSource {
+public protocol SplitViewDataSource: BindableObject {
     associatedtype DataType: Searchable & Identifiable
     func downloadData(success: @escaping ([DataType]) -> (), fail: @escaping (String) -> ())
 }

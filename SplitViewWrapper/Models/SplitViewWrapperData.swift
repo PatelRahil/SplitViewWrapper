@@ -8,16 +8,16 @@
 
 import Foundation
 
-public class SplitViewWrapperData<DataSource: SplitViewDataSource, ListViewItem: SplitViewListItemProtocol, DetailViewItem: SplitViewDetailProtocol> {
+public class SplitViewWrapperData<DataSource: SplitViewDataSource, ListViewItem: SplitViewListItemProtocol, DetailViewItem: SplitViewDetailProtocol, HeaderView: SplitViewHeaderProtocol> {
     var dataSource: DataSource
     var searchableSplitViewDataModel: SearchableSplitViewDataModel<DataSource.DataType>
-    var splitViewModel: SplitViewModel<ListViewItem, DetailViewItem>
-    public init<T: SplitViewDataSource, U: SplitViewListItemProtocol, V: SplitViewDetailProtocol>(dataSource: T, searchableSplitViewDataModel: SearchableSplitViewDataModel<T.DataType>, splitViewModel: SplitViewModel<U,V>) where T.DataType == U.DataType, U.DataType == V.DataType {
+    var splitViewModel: SplitViewModel<ListViewItem, DetailViewItem, HeaderView>
+    public init<T: SplitViewDataSource, U: SplitViewListItemProtocol, V: SplitViewDetailProtocol, W: SplitViewHeaderProtocol>(dataSource: T, searchableSplitViewDataModel: SearchableSplitViewDataModel<T.DataType>, splitViewModel: SplitViewModel<U,V,W>) where T.DataType == U.DataType, U.DataType == V.DataType {
         self.dataSource = dataSource as! DataSource
         self.searchableSplitViewDataModel = searchableSplitViewDataModel as! SearchableSplitViewDataModel<DataSource.DataType>
-        self.splitViewModel = splitViewModel as! SplitViewModel<ListViewItem, DetailViewItem>
+        self.splitViewModel = splitViewModel as! SplitViewModel<ListViewItem, DetailViewItem, HeaderView>
     }
-    public convenience init<T: SplitViewDataSource, U: SplitViewListItemProtocol, V: SplitViewDetailProtocol>(dataSource: T, splitViewModel: SplitViewModel<U,V>) where T.DataType == U.DataType, U.DataType == V.DataType {
+    public convenience init<T: SplitViewDataSource, U: SplitViewListItemProtocol, V: SplitViewDetailProtocol, W: SplitViewHeaderProtocol>(dataSource: T, splitViewModel: SplitViewModel<U,V,W>) where T.DataType == U.DataType, U.DataType == V.DataType {
         let splitViewDataModel = SearchableSplitViewDataModel<T.DataType>()
         self.init(dataSource: dataSource, searchableSplitViewDataModel: splitViewDataModel, splitViewModel: splitViewModel)
     }

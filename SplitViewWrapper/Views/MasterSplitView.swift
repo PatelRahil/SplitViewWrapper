@@ -8,13 +8,20 @@
 
 import SwiftUI
 
-struct MasterSplitView<DataSource: SplitViewDataSource, ListItemType: SplitViewListItemProtocol, DetailViewType: SplitViewDetailProtocol> : View {
-    @EnvironmentObject var splitViewModel: SplitViewModel<ListItemType, DetailViewType>
-    var items:[DataSource.DataType]
+struct MasterSplitView<DataSource: SplitViewDataSource, ListItemType: SplitViewListItemProtocol, DetailViewType: SplitViewDetailProtocol, HeaderViewType: SplitViewHeaderProtocol> : View {
+    @EnvironmentObject var splitViewModel: SplitViewModel<ListItemType, DetailViewType, HeaderViewType>
+    @Binding var items:[DataSource.DataType]
     var body: some View {
         VStack {
+            if splitViewModel.splitViewHeader != nil {
+                splitViewModel.splitViewHeader!
+                Divider()
+            }
             if splitViewModel.searchable {
-                SplitViewSearchbar<DataSource.DataType>().padding()
+                SplitViewSearchbar<DataSource.DataType>()
+                    .padding()
+                    .background(Color(.displayP3, red: 242, green: 242, blue: 247, opacity: 0.13))
+                Divider()
             }
             List {
                 ForEach(items) { item -> SplitViewListItem<DataSource, ListItemType> in

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB2E862122CA4B3C005B32FC /* SplitViewHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E862022CA4B3C005B32FC /* SplitViewHeaderProtocol.swift */; };
 		FBB0926B22BB1837000A91E9 /* SplitViewWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB0926922BB1837000A91E9 /* SplitViewWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBB0928B22BB18E3000A91E9 /* SplitViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927422BB18E2000A91E9 /* SplitViewDataSource.swift */; };
 		FBB0928C22BB18E3000A91E9 /* Searchable.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927522BB18E2000A91E9 /* Searchable.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB2E862022CA4B3C005B32FC /* SplitViewHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewHeaderProtocol.swift; sourceTree = "<group>"; };
 		FBB0926622BB1837000A91E9 /* SplitViewWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SplitViewWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB0926922BB1837000A91E9 /* SplitViewWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewWrapper.h; sourceTree = "<group>"; };
 		FBB0926A22BB1837000A91E9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				FBB0927522BB18E2000A91E9 /* Searchable.swift */,
 				FBB0927622BB18E2000A91E9 /* SplitViewListItemProtocol.swift */,
 				FBF9ACA522BD5BC800EB5DC8 /* SplitViewDetailProtocol.swift */,
+				FB2E862022CA4B3C005B32FC /* SplitViewHeaderProtocol.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -218,6 +221,7 @@
 				FBB0929422BB18E3000A91E9 /* SplitViewListItem.swift in Sources */,
 				FBB0929C22BB18E3000A91E9 /* SplitViewModel.swift in Sources */,
 				FBB0928E22BB18E3000A91E9 /* SplitViewWrapper.swift in Sources */,
+				FB2E862122CA4B3C005B32FC /* SplitViewHeaderProtocol.swift in Sources */,
 				FBB0929D22BB18E3000A91E9 /* SplitViewWrapperData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
