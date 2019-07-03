@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB1D817A22CBDF7C00CE3BCC /* SplitViewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB1D817922CBDF7C00CE3BCC /* SplitViewList.swift */; };
 		FB2E862122CA4B3C005B32FC /* SplitViewHeaderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB2E862022CA4B3C005B32FC /* SplitViewHeaderProtocol.swift */; };
 		FBB0926B22BB1837000A91E9 /* SplitViewWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = FBB0926922BB1837000A91E9 /* SplitViewWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		FBB0928B22BB18E3000A91E9 /* SplitViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0927422BB18E2000A91E9 /* SplitViewDataSource.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB1D817922CBDF7C00CE3BCC /* SplitViewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewList.swift; sourceTree = "<group>"; };
 		FB2E862022CA4B3C005B32FC /* SplitViewHeaderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewHeaderProtocol.swift; sourceTree = "<group>"; };
 		FBB0926622BB1837000A91E9 /* SplitViewWrapper.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SplitViewWrapper.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FBB0926922BB1837000A91E9 /* SplitViewWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SplitViewWrapper.h; sourceTree = "<group>"; };
@@ -108,6 +110,7 @@
 				FBB0927822BB18E2000A91E9 /* SplitViewWrapper.swift */,
 				FBB0927922BB18E2000A91E9 /* SplitViewSearchBar.swift */,
 				FBB0927B22BB18E2000A91E9 /* MasterSplitView.swift */,
+				FB1D817922CBDF7C00CE3BCC /* SplitViewList.swift */,
 				FBB0927C22BB18E2000A91E9 /* SplitView.swift */,
 				FBB0927D22BB18E2000A91E9 /* DetailSplitView.swift */,
 				FBB0927E22BB18E2000A91E9 /* SplitViewListItem.swift */,
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBB0929522BB18E3000A91E9 /* SplitViewWrapperView.swift in Sources */,
+				FB1D817A22CBDF7C00CE3BCC /* SplitViewList.swift in Sources */,
 				FBB0928B22BB18E3000A91E9 /* SplitViewDataSource.swift in Sources */,
 				FBB0928C22BB18E3000A91E9 /* Searchable.swift in Sources */,
 				FBB0929322BB18E3000A91E9 /* DetailSplitView.swift in Sources */,

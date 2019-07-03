@@ -15,15 +15,9 @@ struct SplitViewSearchbar<DataType: Searchable & Identifiable> : View {
     var body: some View {
         TextField($searchTerm, placeholder: Text("Search"), onEditingChanged: { (started) in
             if !started {
-                self.dataModel.displayedItems = self.search(self.searchTerm, allItems: self.dataModel.allItems)
+                self.dataModel.search(self.searchTerm)
+                self.dataModel.searchTerm = self.searchTerm
             }
         })
-    }
-    
-    func search(_ searchTerm: String, allItems: [DataType]) -> [DataType] {
-        let searchedItems: [DataType] = allItems.filter {
-            $0.searchableText.hasPrefix(searchTerm)
-        }
-        return searchedItems
     }
 }

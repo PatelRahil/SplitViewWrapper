@@ -19,10 +19,28 @@ public final class SearchableSplitViewDataModel<SearchableDataType: Identifiable
             }
         }
     }
+    public var searchTerm: String?
     
     public override init() {
         super.init()
         searchable = true
         print("DataModel type: \(SearchableDataType.Type.self)")
+    }
+    func search(_ searchTerm: String) {
+        let searchedItems: [SearchableDataType] = allItems.filter {
+            $0.searchableText.hasPrefix(searchTerm)
+        }
+        displayedItems = searchedItems
+    }
+    public func refreshSearch() {
+        if let searchTerm = self.searchTerm {
+            self.filterDisplayed(searchTerm)
+        }
+    }
+    private func filterDisplayed(_ searchTerm: String) {
+        let searchedItems: [SearchableDataType] = displayedItems.filter {
+            $0.searchableText.hasPrefix(searchTerm)
+        }
+        displayedItems = searchedItems
     }
 }
