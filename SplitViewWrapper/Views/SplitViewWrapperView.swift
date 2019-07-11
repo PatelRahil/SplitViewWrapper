@@ -18,6 +18,9 @@ struct SplitViewWrapperView<DataSource: SplitViewDataSource, ListItemType: Split
                     print("downloading data")
                     self.splitViewDataModel.allItems = items
                     self.splitViewDataModel.displayedItems = items
+                    if let firstItem = self.splitViewDataModel.allItems.first {
+                        self.splitViewDataModel.selectedItem = firstItem
+                    }
                 }) { (errorDescription) in
                     print(errorDescription)
                 }
